@@ -1,14 +1,11 @@
 #include<stdio.h>
 #include<math.h>
-int power(int x,int y){
-    int pwr;
-    pwr = pow(x,y);
-    return pwr;
-}
 int main (){
-    int a=3,b=3,result;
+    double x,y,r,fi;
+    printf ("enter the value of x,y");
+    scanf ("%lf %lf",&x,&y);
+    r = sqrt(x*x + y*y);
+    fi = atan(y/x);
+    printf ("r is :%lf\n fi is:%lf",r,fi);
 
-    result = power(a,b);
-    printf("power of a^b is %d",result);
-    
 }
